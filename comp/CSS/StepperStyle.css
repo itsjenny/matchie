@@ -1,0 +1,111 @@
+
+.main {
+  margin: 0;
+  background-image: url(../Sunset/Sunset.jpg);
+  text-align: center;
+  color:white;
+  min-height: 1000px;
+}
+
+h1{
+  margin:0;
+  padding-top: 3vw;
+  font-size: 6vw;
+  line-height: 95%;
+  display: block
+}
+
+h4 {
+  font:x-large;
+  padding: 0;
+  color: #8b484f;
+}
+.header {
+  color: #8b484f;
+}
+
+p {
+  color: #8b484f;
+}
+
+.box{
+  color: #dc5537;
+}
+.stepper {
+  background-color: #dfd7c6;
+  text-align: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-style: solid;
+  border-color: #dc5537;
+  border-width: thick;
+
+}
+
+.stepMain {
+    padding: 5%;
+    text-align: left;
+    
+}
+.divider{
+    width:1vw;
+    height:auto;
+    display:inline-block;
+}
+
+.stepButton {
+    color: #414b5d;
+    transition: all 0.3s;
+    position: relative;
+    display: inline;
+    text-align: center;
+    padding: 0.5vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  .stepButton span {
+    transition: all 0.3s;
+  }
+  .stepButton::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: #414b5d;
+    border-bottom-color: #414b5d;
+    transform: scale(0.1, 1);
+  }
+  .stepButton:hover span {
+    letter-spacing: 2px;
+  }
+  .stepButton:hover::before {
+    opacity: 1; 
+    transform: scale(1, 1); 
+  }
+  .stepButton::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
+    background-color: rgba(255,255,255,0.1);
+  }
+  .stepButton:hover::after {
+    opacity: 0; 
+    transform: scale(0.1, 1);
+  }
+  
